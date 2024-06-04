@@ -1,0 +1,10 @@
+- each sample has two channels 
+- so the two have to go together making it 4 bytes per that we need to reverse 
+- EX: [04 05 | 0e 57]  <- this is one "sample". each is a different channel (so two microphones)
+- Left and right channel need to stay together
+
+- TRY THESE THINGS?
+    - interpret original byte arr as int* instead of short*
+    - the computer now looks at byte_array as chunks of 4 bytes
+    - do the reversing
+    - interpret new byte arr as char* and write to file
